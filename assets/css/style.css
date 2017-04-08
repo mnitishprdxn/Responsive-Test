@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+   html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+   blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+   ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,center,
+   dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+   tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+   figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+    padding: 0;
+    margin: 0;
+
+    font: inherit;
+    font-size: 100%;
+
+    vertical-align: baseline;
+
+    border: 0;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section,
+  main {
+    display: block;
+  }
+
+  /* Force scrollbar */
+  html {
+    overflow-y: scroll;
+  }
+
+  /* Align radios and text inputs with their label */
+
+  input[type="radio"] {
+    vertical-align: text-bottom;
+  }
+
+  /* Hand cursor on clickable input elements */
+  label,
+  input[type="button"],
+  input[type="submit"],
+  button {
+    cursor: pointer;
+  }
+
+  strong {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  img {
+    vertical-align: middle;
+
+    border: 0;
+  }
+
+  sub,
+  sup {
+    position: relative;
+
+    font-size: 55%;
+    line-height: 0;
+
+    vertical-align: baseline;
+  }
+
+  sup {
+    top: -.7em;
+  }
+
+  sub {
+    bottom: -.25em;
+  }
+
+/* 1.2. Clear Fix
+========================================================================== */
+
+  .cf:before,
+  .cf:after {
+    display: table;
+
+    content: " ";
+  }
+
+  .cf:after {
+    clear: both;
+  }
+
+/*********************** Styling starts ***********************************/
+
+.header-wrapper {
+  max-width: 1020px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  background: url(../images/background.jpg); 
+}
+
+header h2 {
+  padding-top: 28px;
+  width: 44%;
+  display: inline-block;
+}
+
+header h2 img {
+  max-width: 100%;
+}
+
+.layer1 {
+  width: 44.41176470588235%;
+  height: 41px;
+  margin-left: 8%;
+  position: relative;
+  top: 23px;
+  right: 2.2549019607843137%;
+  background-color: #A18A18;
+  display: inline-block;
+}
+
+.layer2 {
+  width: 44.41176470588235%;
+  height: 41px;
+  margin-left: 51%;
+  position: relative;
+  left: 0%;
+  top: -50px;
+  right: 2.2549019607843137%;
+  background-color: #A18A18;
+  display: inline-block;
+  border: 1px solid #9b7d07;
+}
+
+.navbar {
+  margin-left: 52%;
+  display: inline-block;
+  width: 44.41176470588235%;
+  height: 41px;
+  top: -93px;
+  background-color: #F4C505;
+  position: relative;
+  border: 1px solid #9b7d07; 
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding-left: 7%;
+  padding-top: 10px;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'SegoeWP', sans-serif;
+  color:  #9b7d07;
+  font-size: 17.05px;
+  font-weight: 400;
+}
+
+.slogan {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 5%;
+  position: relative;
+  top: 47px;
+}
+
+.slogan-img {
+  padding-bottom: 36px;
+}
+
+.slogan span {
+  font-family: 'Asap', sans-serif;
+  color:  #f5c506;
+  font-size: 63.05px;/* Approximation due to font substitution */
+  font-weight: 400;
+}
+
+.slogan p {
+  font-family: 'Asap', sans-serif;
+  font-size: 63.05px;/* Approximation due to font substitution */
+  font-weight: 400;
+}
+
+header >img {
+  position: absolute;
+}
+
+.left-arrow {
+  top: 360px;
+}
+
+.right-arrow {
+  top: 360px;
+  right: 0;
+}
+
+.main-wrapper {
+  max-width: 1019px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.better-design,
+.customise {
+ width: 32.36604514229637%;
+ height: 180px;
+ text-align: center;
+ display: inline-block;
+}
+
+.better-design,
+.customise,
+.its-free p {
+  font-family: 'Segoe UI',sans-serif;
+  color:  black;
+  font-size: 27.05px;
+  text-transform: uppercase;
+  padding-top: 18px;
+  }
+
+.better-design,
+.customise {
+  border-left: 1px solid lightgrey;
+}
+
+.its-free {
+  width: 32.36604514229637%;
+  height: 237px;
+  text-align: center;
+  display: inline-block;
+  border-right: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+}
+
+.better-design,
+.customise,
+.its-free img {
+  padding-top: 61px; 
+}
+
+.better-design p { padding-top: 33px; }
+
+.customise p { padding-top: 12px; }
+
+section {
+  background-image: url(../images/background-one.jpg);
+}
+
+section h2 {
+  padding: 42px 0;
+  font-family: sans-serif;
+  color: #ffffff;
+  font-size: 37.05px; /* Approximation due to font substitution */
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: left;
+  }
